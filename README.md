@@ -1,66 +1,31 @@
-## Foundry
+## Web3 Upgradeable Smart Contract Project
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+**hey folks!
+This is a smart contract repository that was produced as part of the learning and development process.**
 
-Foundry consists of:
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+## About 
 
-## Documentation
+### Introduction:
 
-https://book.getfoundry.sh/
+**Welcome to the Web3 Upgradeable Smart Contract project! Upgradeable smart contracts offer flexibility and adaptability, allowing for seamless updates and improvements without disrupting the contract's core functionality or requiring users to migrate to a new contract address.**
 
-## Usage
+>### Features:
 
-### Build
+1. **Proxy Contracts:** Utilize proxy contracts to separate the logic contract from the proxy contract, enabling seamless upgrades without changing the contract address visible to users.
+2. **Upgradeable Libraries:** Employ upgradeable libraries to modularize contract logic and enable independent upgrades to specific functionalities.
 
-```shell
-$ forge build
-```
+>### Project Structure:
 
-### Test
+1. **Contracts Directory:** Contains Solidity smart contract files.
 
-```shell
-$ forge test
-```
+>>>**->Logic Contracts:**  Holds the primary logic for the smart contract functionalities.\
+>>> **->Proxy Contracts:** Includes proxy contracts to delegate calls to logic contracts.\
+>>> **->Libraries:** Contains reusable libraries for specific functionalities.
+2. **Tests Directory:** Contains unit tests for the smart contracts.
 
-### Format
+3. **Scripts Directory:** Includes deployment scripts and utilities for managing upgradeable contracts.
 
-```shell
-$ forge fmt
-```
+>## Foundry
 
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+> **Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
